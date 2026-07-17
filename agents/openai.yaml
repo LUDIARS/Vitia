@@ -1,4 +1,4 @@
 interface:
   display_name: "Vitia"
-  short_description: "µ‚Â‚Ì—~‹E”½‰ƒ‚ƒfƒ‹‚©‚çŒŸØ‰Â”\‚È”Ì”„í—ª‚ğİŒv"
-  default_prompt: "Use $vitia to analyze this offer and design an ethical, testable marketing strategy."
+  short_description: "ä¸ƒã¤ã®è¡Œå‹•ãƒ¬ãƒ³ã‚ºã¨å­¦è¡“çš„æ©Ÿæ§‹ã§æ¤œè¨¼å¯èƒ½ãªè²©ä¿ƒæˆ¦ç•¥ã‚’è¨­è¨ˆ"
+  default_prompt: "Use $vitia to analyze this offer and design an ethical, evidence-aware marketing experiment."

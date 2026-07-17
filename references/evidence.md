@@ -4,7 +4,9 @@
 
 1. General decision and identity mechanisms
 2. Domain-specific evidence
-3. Interpretation rules
+3. Supporting mechanism evidence
+4. Contested and heterogeneous findings
+5. Interpretation rules
 
 Prefer the linked primary articles when making a strong scientific claim. The domain mapping is a Vitia design convention; the papers validate component mechanisms, not the seven-domain system as a whole.
 
@@ -23,7 +25,38 @@ Prefer the linked primary articles when making a strong scientific claim. The do
 - Bertini, M., & Aydinli, A. (2020). [Consumer Reactance to Promotional Favors](https://doi.org/10.1016/j.jretai.2020.03.002). Experiments show that some action-contingent promotional favors can evoke reactance and reduce spending. Relevant to Ira.
 - Wang, G., Wang, Y., & Gai, X. (2021). [A Meta-Analysis of the Effects of Mental Contrasting With Implementation Intentions on Goal Attainment](https://doi.org/10.3389/fpsyg.2021.565202). Finds a small-to-medium aggregate effect with limitations including publication bias. Relevant to Acedia.
 
-## 3. Interpretation rules
+## 3. Supporting mechanism evidence
+
+### Color in context
+
+- Elliot, A. J., & Maier, M. A. (2014). [Color Psychology: Effects of Perceiving Color on Psychological Functioning in Humans](https://doi.org/10.1146/annurev-psych-010213-115035). Reviews evidence that color can affect cognition, affect, and behavior while emphasizing context, moderators, and limited real-world generalizability. Supports contextual hypotheses, not universal hue meanings.
+- Labrecque, L. I., & Milne, G. R. (2012). [Exciting Red and Competent Blue: The Importance of Color in Marketing](https://doi.org/10.1007/s11747-010-0245-y). Tests associations among color dimensions, brand personality, and purchase-related judgments. Supports brand-specific testing, not deterministic color prescriptions.
+- Labrecque, L. I., Patrick, V. M., & Milne, G. R. (2013). [The Marketers' Prismatic Palette: A Review of Color Research and Future Directions](https://doi.org/10.1002/mar.20597). Integrates embodied and learned referential meanings and highlights cultural, contextual, and methodological boundary conditions.
+
+### Behavioral contingency and processing fluency
+
+- Foxall, G. R. (1992). [The Behavioral Perspective Model of Purchase and Consumption: From Consumer Theory to Marketing Practice](https://doi.org/10.1177/0092070392202009). Models consumer behavior through setting, learning history, and utilitarian and informational consequences. Supports observable contingency mapping rather than inferred personality or motive.
+- Reber, R., Schwarz, N., & Winkielman, P. (2004). [Processing Fluency and Aesthetic Pleasure: Is Beauty in the Perceiver's Processing Experience?](https://doi.org/10.1207/S15327957PSPR0804_3). Reviews how ease of processing relates to aesthetic response across contrast, symmetry, repetition, and prototypicality. Fluency is a subjective experience, not evidence of truth.
+- Kostyk, A., Leonhardt, J. M., & Niculescu, M. (2021). [Processing Fluency Scale Development for Consumer Research](https://doi.org/10.1177/1470785319877137). Develops and validates a four-item consumer-processing-fluency measure covering difficulty, readability, time, and understanding.
+
+### Choice, simulation, norms, and attention
+
+- Scheibehenne, B., Greifeneder, R., & Todd, P. M. (2010). [Can There Ever Be Too Many Options? A Meta-Analytic Review of Choice Overload](https://doi.org/10.1086/651235). Finds a near-zero mean effect with substantial heterogeneity, cautioning against an option-count rule.
+- Chernev, A., Bockenholt, U., & Goodman, J. (2015). [Choice Overload: A Conceptual Review and Meta-Analysis](https://doi.org/10.1016/j.jcps.2014.08.002). Identifies choice-set complexity, decision-task difficulty, preference uncertainty, and decision goal as moderators. These factors are cached as routing signals rather than fixed effect coefficients.
+- Escalas, J. E. (2004). [Imagine Yourself in the Product: Mental Simulation, Narrative Transportation, and Persuasion](https://doi.org/10.1080/00913367.2004.10639163). Experiments with ad-encouraged mental simulation and brand evaluation. Supports a treatment hypothesis while also motivating a critical-scrutiny guardrail.
+- Schultz, P. W. et al. (2007). [The Constructive, Destructive, and Reconstructive Power of Social Norms](https://doi.org/10.1111/j.1467-9280.2007.01917.x). A field experiment found that descriptive norm messages could produce a boomerang effect and that an injunctive cue removed it in that context.
+- Rhodes, N., Shulman, H. C., & McClaran, N. (2020). [Changing Norms: A Meta-Analytic Integration of Research on Social Norms Appeals](https://doi.org/10.1093/hcr/hqz023). Reports generally small, heterogeneous effects across 110 articles and finds meaningful moderators.
+- Pieters, R., & Wedel, M. (2004). [Attention Capture and Transfer in Advertising: Brand, Pictorial, and Text-Size Effects](https://doi.org/10.1509/jmkg.68.2.36.27794). Uses eye-tracking data across print advertisements to study attention to brand, pictorial, and text elements. Attention remains an intermediate outcome.
+- Bhatnagar, R., & Orquin, J. L. (2022). [A Meta-Analysis on the Effect of Visual Attention on Choice](https://doi.org/10.1037/xge0001204). Finds small causal choice shifts for some attention manipulations, with effects differing by manipulation type.
+
+## 4. Contested and heterogeneous findings
+
+- Mertens, S. et al. (2022). [The Effectiveness of Nudging: A Meta-Analysis of Choice Architecture Interventions Across Behavioral Domains](https://doi.org/10.1073/pnas.2107346118), with its [published correction](https://doi.org/10.1073/pnas.2204059119), reports a positive aggregate effect with considerable heterogeneity and publication bias.
+- Maier, M. et al. (2022). [No Evidence for Nudging After Adjusting for Publication Bias](https://doi.org/10.1073/pnas.2200300119) reanalyzes that literature and disputes a nonzero aggregate effect after bias adjustment.
+
+Do not encode a generic nudge uplift, a universal best color, or a fixed maximum option count. Cache moderators and experimental procedures, then estimate local effects with a control.
+
+## 5. Interpretation rules
 
 1. Distinguish mechanism evidence from campaign evidence. A mechanism paper does not prove a specific headline or UI treatment works.
 2. Prefer behavioral outcomes over neural proxies for campaign decisions.
@@ -32,3 +65,4 @@ Prefer the linked primary articles when making a strong scientific claim. The do
 5. Mark evidence as direct, adjacent, or speculative for the actual offer.
 6. Require an experiment or strong quasi-experimental design before claiming campaign causality.
 7. Update this file when an algorithm changes materially; do not silently cite a theory for a tactic it does not test.
+8. Preserve conflicting meta-analytic conclusions instead of selecting the most convenient aggregate estimate.

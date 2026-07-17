@@ -1,6 +1,6 @@
 ---
 name: vitia
-description: "Design ethical, evidence-aware marketing and sales strategies by analyzing an offer through seven behavioral lenses: Superbia, Avaritia, Luxuria, Invidia, Gula, Ira, and Acedia. Use when asked to position a product or feature, choose persuasive angles, diagnose conversion or retention problems, compose multiple behavioral mechanisms, write a sales hypothesis, or plan marketing experiments. Do not use the seven labels as personality diagnoses."
+description: "Design ethical, evidence-aware marketing and sales strategies by analyzing an offer through seven behavioral lenses: Superbia, Avaritia, Luxuria, Invidia, Gula, Ira, and Acedia. Use when asked to position a product or feature, choose persuasive angles, diagnose conversion or retention problems, compose behavioral mechanisms, write a sales hypothesis, plan marketing experiments, or audit color, contingencies, fluency, choices, simulation, norms, and visual attention. Do not use the seven labels as personality diagnoses."
 ---
 
 # Vitia
@@ -20,19 +20,23 @@ Treat the seven Latin domains as a strategy-selection interface, not as a scient
    - Read [references/algorithm.md](references/algorithm.md).
    - For repeatable scoring, run `python scripts/score_vitia.py <input.json>`.
    - Treat missing signals as unknown, never as zero, when making a qualitative assessment.
-4. Select one primary domain and at most one secondary domain.
+4. Route supporting mechanisms when the artifact or bottleneck makes them material.
+   - Read [references/mechanisms.md](references/mechanisms.md).
+   - For repeatable opportunity and readiness auditing, run `python scripts/audit_marketing_mechanisms.py <input.json>`.
+   - Keep supporting-module scores separate from the seven-domain scores. Resolve readiness gaps before deployment.
+5. Select one primary domain and at most one secondary domain.
    - Read the selected sections of [references/domains.md](references/domains.md).
    - Give each selected domain a distinct job. Do not stack synonyms for intensity.
    - Apply the conflict and caution rules in `references/algorithm.md`.
-5. Generate a strategy card.
+6. Generate a strategy card.
    - State the audience insight as a hypothesis.
    - Map a verified feature to a customer outcome and then to the selected mechanism.
    - Provide the proposition, message angle, proof, call to action, channel, and failure condition.
-6. Design a test.
+7. Design a test.
    - Compare the proposed treatment with a meaningful control.
    - Choose one primary behavioral metric and at least one trust or harm guardrail.
    - Define the segment before observing results; do not reverse-engineer vulnerable targets.
-7. Audit the final output.
+8. Audit the final output.
    - Remove fabricated urgency, hidden defaults, shame, scapegoating, addictive reward schedules, and deterministic brain claims.
    - Preserve user agency, disclosure, reversibility, and easy exit.
 
@@ -43,9 +47,10 @@ Return sections in this order:
 1. **Truth ledger**: verified, assumed, unknown.
 2. **Diagnosis**: objective, bottleneck, audience context.
 3. **Domain selection**: scores or qualitative strength, primary, optional secondary, and reasons for excluding close alternatives.
-4. **Strategy card**: mechanism, proposition, proof, message, CTA, channel, and boundary conditions.
-5. **Experiment**: control, treatment, primary metric, guardrail metric, duration or stopping rule, and disconfirming result.
-6. **Ethics check**: risks found and mitigations.
+4. **Supporting mechanism audit**: when material, module, opportunity evidence, readiness gaps, and relationship to the selected domain.
+5. **Strategy card**: mechanism, proposition, proof, message, CTA, channel, and boundary conditions.
+6. **Experiment**: control, treatment, primary metric, guardrail metric, duration or stopping rule, and disconfirming result.
+7. **Ethics check**: risks found and mitigations.
 
 Prefer plain language in customer-facing copy. Keep the Latin domain names in analysis or internal labels unless the user explicitly wants them exposed.
 
