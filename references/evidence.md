@@ -49,6 +49,32 @@ Prefer the linked primary articles when making a strong scientific claim. The do
 - Pieters, R., & Wedel, M. (2004). [Attention Capture and Transfer in Advertising: Brand, Pictorial, and Text-Size Effects](https://doi.org/10.1509/jmkg.68.2.36.27794). Uses eye-tracking data across print advertisements to study attention to brand, pictorial, and text elements. Attention remains an intermediate outcome.
 - Bhatnagar, R., & Orquin, J. L. (2022). [A Meta-Analysis on the Effect of Visual Attention on Choice](https://doi.org/10.1037/xge0001204). Finds small causal choice shifts for some attention manipulations, with effects differing by manipulation type.
 
+### Regulatory fit and construal level
+
+- Higgins, E. T. (2000). [Making a Good Decision: Value From Fit](https://doi.org/10.1037/0003-066X.55.11.1217). Proposes that compatibility between a goal orientation and the manner of pursuit can create value from fit. Fit is not evidence that the underlying claim is true.
+- Motyka, S. et al. (2014). [Regulatory Fit: A Meta-Analytic Synthesis](https://doi.org/10.1016/j.jcps.2013.11.004). Synthesizes regulatory-fit effects on evaluation, behavioral intention, and behavior and reports theoretically meaningful moderators.
+- Trope, Y., & Liberman, N. (2010). [Construal-Level Theory of Psychological Distance](https://doi.org/10.1037/a0018963). Reviews reciprocal relations between psychological distance and abstract versus concrete representation across distance dimensions.
+- Soderberg, C. K. et al. (2015). [The Effects of Psychological Distance on Abstraction: Two Meta-Analyses](https://doi.org/10.1037/bul0000005). Finds an aggregate distance-abstraction relation while documenting heterogeneity and design limitations.
+
+### Self-determination and progress
+
+- Deci, E. L., & Ryan, R. M. (2000). [The “What” and “Why” of Goal Pursuits: Human Needs and the Self-Determination of Behavior](https://doi.org/10.1207/S15327965PLI1104_01). Develops autonomy, competence, and relatedness as basic psychological needs and distinguishes autonomous from controlled motivation.
+- Gilal, F. G. et al. (2019). [The Role of Self-Determination Theory in Marketing Science: An Integrative Review and Agenda for Research](https://doi.org/10.1016/j.emj.2018.10.004). Reviews uses of self-determination theory in marketing and identifies construct and context gaps.
+- Kivetz, R., Urminsky, O., & Zheng, Y. (2006). [The Goal-Gradient Hypothesis Resurrected: Purchase Acceleration, Illusionary Goal Progress, and Customer Retention](https://doi.org/10.1509/jmkr.43.1.39). Uses field, secondary, and experimental evidence to examine increasing effort near a reward.
+- Nunes, J. C., & Drèze, X. (2006). [The Endowed Progress Effect: How Artificial Advancement Increases Effort](https://doi.org/10.1086/500480). Shows that an apparent head start can increase persistence when it reframes progress. Vitia permits only real, disclosed credit rather than fabricated progress.
+
+### Information scent and elaboration
+
+- Pirolli, P., & Card, S. (1999). [Information Foraging](https://doi.org/10.1037/0033-295X.106.4.643). Models information seeking through expected value, cost, and proximal cues that predict useful information.
+- Pirolli, P. (2007). [Information Foraging Theory: Adaptive Interaction with Information](https://doi.org/10.1093/acprof:oso/9780195173321.001.0001). Develops the framework for navigation and information-seeking behavior; scent remains relative to a user's information goal.
+- Petty, R. E., & Cacioppo, J. T. (1986). [The Elaboration Likelihood Model of Persuasion](https://doi.org/10.1016/S0065-2601(08)60214-2). Integrates how motivation and ability to scrutinize affect the role of arguments and peripheral variables in persuasion.
+- Petty, R. E., Cacioppo, J. T., & Schumann, D. (1983). [Central and Peripheral Routes to Advertising Effectiveness: The Moderating Role of Involvement](https://doi.org/10.1086/208954). Experimentally varies involvement, argument quality, and endorser cues in an advertising context.
+
+### Credible signaling
+
+- Boulding, W., & Kirmani, A. (1993). [A Consumer-Side Experimental Examination of Signaling Theory: Do Consumers Perceive Warranties as Signals of Quality?](https://doi.org/10.1086/209337). Tests how warranty properties and credibility affect quality perceptions under information asymmetry.
+- Balachander, S. (2001). [Warranty Signalling and Reputation](https://doi.org/10.1287/mnsc.47.9.1282.9783). Shows why warranty signaling can be strategically ambiguous; a stronger warranty is not a universal quality signal.
+
 ## 4. Contested and heterogeneous findings
 
 - Mertens, S. et al. (2022). [The Effectiveness of Nudging: A Meta-Analysis of Choice Architecture Interventions Across Behavioral Domains](https://doi.org/10.1073/pnas.2107346118), with its [published correction](https://doi.org/10.1073/pnas.2204059119), reports a positive aggregate effect with considerable heterogeneity and publication bias.

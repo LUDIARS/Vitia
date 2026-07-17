@@ -1,6 +1,6 @@
 ---
 name: vitia
-description: "Design ethical, evidence-aware marketing and sales strategies by analyzing an offer through seven behavioral lenses: Superbia, Avaritia, Luxuria, Invidia, Gula, Ira, and Acedia. Use when asked to position a product or feature, choose persuasive angles, diagnose conversion or retention problems, compose behavioral mechanisms, write a sales hypothesis, plan marketing experiments, or audit color, contingencies, fluency, choices, simulation, norms, and visual attention. Do not use the seven labels as personality diagnoses."
+description: "Design ethical, evidence-aware marketing and sales strategies by analyzing an offer through seven behavioral lenses: Superbia, Avaritia, Luxuria, Invidia, Gula, Ira, and Acedia. Use when asked to position a product or feature, choose persuasive angles, diagnose conversion or retention problems, compose behavioral mechanisms, write a sales hypothesis, plan marketing experiments, or audit color, contingencies, fluency, choices, simulation, norms, attention, goal framing, distance, autonomy, progress, navigation, elaboration, and credible signals. Do not use the seven labels as personality diagnoses."
 ---
 
 # Vitia
@@ -33,6 +33,7 @@ Treat the seven Latin domains as a strategy-selection interface, not as a scient
    - Map a verified feature to a customer outcome and then to the selected mechanism.
    - Provide the proposition, message angle, proof, call to action, channel, and failure condition.
 7. Design a test.
+   - Read [references/research-methods.md](references/research-methods.md) to distinguish causal tests, factorial mechanism tests, attribute tradeoff research, and proposition prioritization.
    - Compare the proposed treatment with a meaningful control.
    - Choose one primary behavioral metric and at least one trust or harm guardrail.
    - Define the segment before observing results; do not reverse-engineer vulnerable targets.

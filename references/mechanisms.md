@@ -11,7 +11,14 @@
 7. Mental simulation
 8. Social norms
 9. Attention hierarchy
-10. Integration with Vitia
+10. Regulatory fit
+11. Construal-level alignment
+12. Self-determination support
+13. Goal-gradient progress
+14. Information scent
+15. Elaboration depth
+16. Credible signaling
+17. Integration with Vitia
 
 ## 1. Use and separation rules
 
@@ -21,6 +28,8 @@ Use these modules to improve how a selected Vitia strategy is expressed, deliver
 - Keep **opportunity** separate from **readiness**. A relevant mechanism is not ready to deploy until its claim, measurement, and guardrails are specified.
 - Treat every output as an experiment hypothesis, not an effect-size prediction.
 - Read [evidence.md](evidence.md) before making a scientific claim.
+- Use [research-methods.md](research-methods.md) for causal or preference
+  measurement; research methods are not scored as persuasion mechanisms.
 - Do not let a module score modify the seven-domain score automatically.
 
 For deterministic routing, run:
@@ -129,7 +138,117 @@ Never fabricate counts, ratings, scarcity, popularity, or similarity to the audi
 
 Attention is an intermediate measure, not proof of persuasion, preference, or customer benefit.
 
-## 10. Integration with Vitia
+## 10. Regulatory fit
+
+**Supports:** Superbia for advancement goals, Avaritia for security and loss
+avoidance, Acedia for goal-pursuit framing.
+
+1. Infer a promotion or prevention orientation from the current goal and
+   decision context, not from a fixed personality label.
+2. Separate the desired end from the means: eager advancement and vigilant
+   protection are not interchangeable with positive and negative wording.
+3. Cross matched and mismatched variants while holding the offer, evidence,
+   and claim strength constant.
+4. Measure qualified behavior, comprehension, trust, and heterogeneous effects.
+
+A message that feels right is not necessarily true. Do not use fit to intensify
+fear, conceal uncertainty, or profile an individual without consent.
+
+## 11. Construal-level alignment
+
+**Supports:** Luxuria for anticipated desirability, Avaritia for future value,
+Acedia for concrete next action.
+
+1. Define the distance dimension: time, space, social distance, or probability.
+2. Diagnose whether the decision needs abstract purpose or concrete feasibility.
+3. Create abstract and concrete variants from identical product facts.
+4. Cross framing with a near or distant context and measure comprehension,
+   decision quality, and action.
+
+This differs from mental simulation: simulation constructs a use episode;
+construal alignment changes the level of representation. Never remove material
+details merely because the decision is distant.
+
+## 12. Self-determination support
+
+**Supports:** Superbia for authentic mastery, Gula for sustainable engagement,
+Acedia for self-endorsed activation.
+
+1. Locate the need most affected by the experience: autonomy, competence, or
+   relatedness.
+2. Replace controlling language with meaningful choice and a truthful rationale.
+3. Make competence feedback specific to real progress and skill.
+4. Make connection optional and nonpressuring; preserve easy exit.
+5. Measure sustained qualified use, perceived pressure, customer benefit, and
+   dependency indicators.
+
+This differs from behavioral contingency: it asks whether engagement is
+self-endorsed, not only whether cues and consequences alter behavior.
+
+## 13. Goal-gradient progress
+
+**Supports:** Gula for repeated progress, Acedia for completion momentum,
+Avaritia for progress toward earned value.
+
+1. Define the valued goal, real starting state, completion rule, and reward.
+2. Measure effort or drop-off across remaining distance before changing the UI.
+3. Test one truthful progress representation or credit for work already done.
+4. Disclose expiry and reset rules and preserve value before completion.
+5. Measure completion and pace together with abandonment, regret, and overuse.
+
+Do not fabricate a head start or use accumulated progress as sunk-cost pressure.
+Goal-gradient evidence is a hypothesis about distance and effort, not permission
+for an addictive loop.
+
+## 14. Information scent
+
+**Supports:** Acedia for search and navigation effort, Avaritia for locating
+decision-relevant costs and benefits.
+
+1. Define the user's information goal and the exact destination that satisfies it.
+2. Map proximal cues such as labels, snippets, icons, and link placement to the
+   expected destination value.
+3. Test with representative tasks and vocabulary.
+4. Measure findability, path cost, misclicks, comprehension, and task success.
+5. Keep material terms visible even when they are not the most-clicked target.
+
+This differs from processing fluency: scent predicts where information is;
+fluency concerns the effort of processing it after encounter.
+
+## 15. Elaboration depth
+
+**Supports:** Avaritia for consequential tradeoffs, Superbia for defensible
+identity claims, Acedia for the ability to scrutinize complex evidence.
+
+1. Measure situational motivation and ability to examine the claim.
+2. Separate supported argument quality from incidental cues such as celebrity,
+   polish, repetition, or source attractiveness.
+3. Vary argument quality and peripheral cues independently where feasible.
+4. Measure comprehension and immediate judgment plus delayed persistence or
+   resistance to counterargument.
+5. Improve access to evidence rather than suppressing scrutiny.
+
+Central and peripheral processing are not permanent audience types. Do not
+reduce ability, create distraction, or hide terms to make weak arguments work.
+
+## 16. Credible signaling
+
+**Supports:** Superbia for earned quality distinction, Avaritia for reducing
+pre-purchase quality uncertainty.
+
+1. Identify the information asymmetry and why quality cannot be verified before
+   purchase.
+2. Specify what the seller commits, what failure costs the seller, and why that
+   bond should correlate with quality.
+3. Make standards, exclusions, duration, evidence, and remedy verifiable.
+4. Compare the commitment with a claim-only control and measure term
+   comprehension, trust, quality inference, and actual claims or remedies.
+
+This differs from social norms: the evidence is the seller's enforceable bond,
+not other customers' behavior. Cost alone is not credibility, and an obscure
+warranty or empty badge can backfire.
+
+## 17. Integration with Vitia
 
 Assign one supporting module a distinct job under the selected domain strategy:
 

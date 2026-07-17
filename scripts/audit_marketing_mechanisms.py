@@ -18,6 +18,11 @@ try:
 except ImportError:  # Support importing this file as scripts.audit_marketing_mechanisms.
     from scripts.score_vitia import BLOCKING_FLAGS, RISK_PENALTIES
 
+try:
+    from academic_marketing_mechanisms import ACADEMIC_MODULES
+except ImportError:  # Support importing this file as scripts.audit_marketing_mechanisms.
+    from scripts.academic_marketing_mechanisms import ACADEMIC_MODULES
+
 
 CANDIDATE_THRESHOLD = 0.45
 COVERAGE_THRESHOLD = 0.50
@@ -236,6 +241,12 @@ MODULES: dict[str, dict[str, Any]] = {
         ),
     },
 }
+
+_overlapping_modules = MODULES.keys() & ACADEMIC_MODULES.keys()
+if _overlapping_modules:
+    names = ", ".join(sorted(_overlapping_modules))
+    raise RuntimeError(f"duplicate marketing mechanism modules: {names}")
+MODULES.update(ACADEMIC_MODULES)
 
 EXAMPLE = {
     "signals": {
