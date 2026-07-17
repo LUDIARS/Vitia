@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Deterministically route a marketing problem to Vitia domains.
+"""Deterministically route observed evidence to Vitia domains.
 
-The weights are transparent product heuristics, not psychological diagnostics.
+Names and labels are ignored. The weights are transparent product heuristics,
+not psychological diagnostics.
 """
 
 from __future__ import annotations
@@ -82,6 +83,12 @@ BLOCKING_FLAGS = {
     "addiction_exploitation",
     "incitement",
     "nonconsensual_surveillance",
+    "price_obfuscation",
+    "inaccessible_cancellation",
+    "paid_random_rewards_children",
+    "loss_chasing_design",
+    "unbounded_spend_exploitation",
+    "artificial_friction_for_payment",
 }
 
 RISK_PENALTIES: dict[str, tuple[set[str], float]] = {
@@ -96,6 +103,14 @@ RISK_PENALTIES: dict[str, tuple[set[str], float]] = {
 
 PROHIBITED_PAIRS = {frozenset(("ira", "invidia"))}
 CAUTION_PAIRS = {frozenset(("luxuria", "gula")): "mandatory compulsion audit"}
+
+LABEL_CONTEXT_KEYS = {
+    "artifact_name",
+    "category_name",
+    "declared_domain",
+    "reputation_label",
+    "source_frame",
+}
 
 EXAMPLE = {
     "signals": {
@@ -113,6 +128,11 @@ EXAMPLE = {
     },
     "confidence": {"global": 0.75, "avaritia": 0.9},
     "risk_flags": [],
+    "label_context": {
+        "artifact_name": "Example offer",
+        "category_name": "subscription",
+        "declared_domain": "avaritia",
+    },
 }
 
 
@@ -129,19 +149,32 @@ def _unit_interval(name: str, value: Any) -> float:
     return number
 
 
-def validate(payload: Any) -> tuple[dict[str, float], dict[str, float], set[str]]:
+def validate(
+    payload: Any,
+) -> tuple[dict[str, float], dict[str, float], set[str], dict[str, str]]:
     if not isinstance(payload, dict):
         raise InputError("input must be a JSON object")
 
     raw_signals = payload.get("signals", {})
     raw_confidence = payload.get("confidence", {"global": 0.5})
     raw_flags = payload.get("risk_flags", [])
+    raw_label_context = payload.get("label_context", {})
     if not isinstance(raw_signals, dict):
         raise InputError("signals must be an object")
     if not isinstance(raw_confidence, dict):
         raise InputError("confidence must be an object")
     if not isinstance(raw_flags, list) or not all(isinstance(x, str) for x in raw_flags):
         raise InputError("risk_flags must be an array of strings")
+    if not isinstance(raw_label_context, dict):
+        raise InputError("label_context must be an object")
+
+    unknown_label_keys = sorted(set(raw_label_context) - LABEL_CONTEXT_KEYS)
+    if unknown_label_keys:
+        raise InputError(
+            f"unknown label_context keys: {', '.join(unknown_label_keys)}"
+        )
+    if not all(isinstance(value, str) for value in raw_label_context.values()):
+        raise InputError("label_context values must be strings")
 
     known_signals = {key for weights in DOMAIN_WEIGHTS.values() for key in weights}
     unknown_signals = sorted(set(raw_signals) - known_signals)
@@ -159,17 +192,23 @@ def validate(payload: Any) -> tuple[dict[str, float], dict[str, float], set[str]
         for key, value in raw_confidence.items()
     }
     confidence.setdefault("global", 0.5)
-    return signals, confidence, set(raw_flags)
+    return signals, confidence, set(raw_flags), dict(raw_label_context)
 
 
 def score(payload: Any) -> dict[str, Any]:
-    signals, confidence, risk_flags = validate(payload)
+    signals, confidence, risk_flags, label_context = validate(payload)
+    neutrality = {
+        "status": "enforced",
+        "ignored_context_keys": sorted(label_context),
+        "rule": "Names, category labels, and declared domains do not affect scores.",
+    }
     blocked = sorted(risk_flags & BLOCKING_FLAGS)
     if blocked:
         return {
             "status": "blocked",
             "blocked_by": blocked,
             "recommendation": "Do not optimize persuasion; provide neutral information or a user-protective alternative.",
+            "label_neutrality": neutrality,
         }
 
     results: list[dict[str, Any]] = []
@@ -253,7 +292,8 @@ def score(payload: Any) -> dict[str, Any]:
         "unknown_risk_flags": sorted(
             risk_flags - BLOCKING_FLAGS - set(RISK_PENALTIES)
         ),
-        "note": "Scores route strategy work; they do not diagnose people or prove causal effects.",
+        "label_neutrality": neutrality,
+        "note": "Scores route strategy work from observed signals; they do not diagnose people or prove causal effects.",
     }
 
 

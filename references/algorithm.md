@@ -2,14 +2,37 @@
 
 ## Contents
 
-1. Input contract
-2. Domain scoring
-3. Selection rules
-4. Composition rules
-5. Strategy generation
-6. Experiment protocol
+1. Label-neutrality invariant
+2. Input contract
+3. Domain scoring
+4. Selection rules
+5. Composition rules
+6. Strategy generation
+7. Experiment protocol
 
-## 1. Input contract
+## 1. Label-neutrality invariant
+
+Complete the evidence pass before exposing the proposed Vitia domain or any
+moralized description to the evaluator.
+
+1. Replace product, category, reputation, and domain names with neutral IDs.
+2. Record only observable features, outcomes, costs, behavior, constraints,
+   provenance, and uncertainty.
+3. Diagnose the bottleneck in plain language.
+4. Score the normalized evidence.
+5. Restore the names without changing signals.
+6. Require the primary, secondary, penalties, and guardrails to remain equal.
+
+In compact form, for evidence `E` and any context-only relabeling `L`:
+
+`score(E, L1) = score(E, L2) = score(E)`
+
+If a relabeling changes the result, the evaluation is contaminated. Discard the
+domain conclusion, mark it exploratory, and repeat the evidence extraction.
+The `label_context` input in `scripts/score_vitia.py` is validated and reported
+but deliberately excluded from every score.
+
+## 2. Input contract
 
 Collect the following. Mark absent items as unknown.
 
@@ -19,12 +42,16 @@ Collect the following. Mark absent items as unknown.
 - **Environment**: channel, timing, public versus private use, frequency, and competitive set.
 - **Evidence**: research, analytics, interviews, experiments, confidence, and provenance.
 - **Safety**: age, vulnerability, regulated context, privacy, reversibility, and foreseeable harms.
+- **Context-only labels**: artifact name, category name, declared domain,
+  reputation, and source framing. Store these separately and never convert them
+  into signals without independent evidence.
 
 Never infer sensitive traits, mental states, or neurological states from weak behavioral proxies.
 
-## 2. Domain scoring
+## 3. Domain scoring
 
-Normalize observed signals to `[0, 1]`. Score only signals supported by evidence. The script uses:
+Normalize observed signals to `[0, 1]`. Score only signals supported by evidence
+from the label-neutral pass. The script uses:
 
 `raw(domain) = weighted mean of observed signals`
 
@@ -46,7 +73,7 @@ The confidence and coverage factors prevent a strong but isolated signal from lo
 
 Use `scripts/score_vitia.py --example` to see the machine-readable schema.
 
-## 3. Selection rules
+## 4. Selection rules
 
 1. Reject blocked uses before scoring.
 2. Select the highest adjusted score as primary when it is at least `0.45`.
@@ -60,7 +87,7 @@ Use `scripts/score_vitia.py --example` to see the machine-readable schema.
 5. Use no more than two active domains in one treatment. Test additional mechanisms separately.
 6. Explain why any near-scoring domain was excluded.
 
-## 4. Composition rules
+## 5. Composition rules
 
 Assign the primary to the main bottleneck and the secondary to proof, activation, or continuity.
 
@@ -77,11 +104,12 @@ Assign the primary to the main bottleneck and the secondary to proof, activation
 
 Do not combine **Ira + Invidia** for persuasive targeting: grievance plus comparison readily becomes humiliation, scapegoating, or polarization. Treat **Luxuria + Gula** as high risk in gambling-like, sexual, substance, eating, or child-directed contexts.
 
-## 5. Strategy generation
+## 6. Strategy generation
 
 Build one strategy card per treatment:
 
 ```text
+Counterfactual rename check:
 Audience hypothesis:
 Bottleneck:
 Primary domain / job:
@@ -97,7 +125,7 @@ Boundary condition:
 
 Require a truth-bearing bridge at `feature -> outcome`. If the bridge is unknown, propose research rather than copy.
 
-## 6. Experiment protocol
+## 7. Experiment protocol
 
 For each strategy:
 

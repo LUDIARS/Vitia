@@ -1,4 +1,4 @@
 interface:
   display_name: "Vitia"
-  short_description: "七つの行動レンズと学術的機構で検証可能な販促戦略を設計"
-  default_prompt: "Use $vitia to analyze this offer and design an ethical, evidence-aware marketing experiment."
+  short_description: "ラベル中立な七領域分析でUX・収益化戦略を検証"
+  default_prompt: "Use $vitia to run a label-neutral analysis and design an ethical, evidence-aware UX, monetization, or marketing experiment."

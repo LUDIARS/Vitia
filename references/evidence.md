@@ -75,6 +75,16 @@ Prefer the linked primary articles when making a strong scientific claim. The do
 - Boulding, W., & Kirmani, A. (1993). [A Consumer-Side Experimental Examination of Signaling Theory: Do Consumers Perceive Warranties as Signals of Quality?](https://doi.org/10.1086/209337). Tests how warranty properties and credibility affect quality perceptions under information asymmetry.
 - Balachander, S. (2001). [Warranty Signalling and Reputation](https://doi.org/10.1287/mnsc.47.9.1282.9783). Shows why warranty signaling can be strategically ambiguous; a stronger warranty is not a universal quality signal.
 
+### UX, onboarding, and monetization
+
+- Hartson, R. (2003). [Cognitive, Physical, Sensory, and Functional Affordances in Interaction Design](https://doi.org/10.1080/01449290310001592587). Distinguishes complementary affordance roles in interaction design and reinforces the difference between possible action and support for perceiving or understanding it.
+- Sweller, J. (1988). [Cognitive Load During Problem Solving: Effects on Learning](https://doi.org/10.1207/s15516709cog1202_4). Provides foundational evidence that means–ends problem solving can impose cognitive load that interferes with schema acquisition. It supports reducing avoidable tutorial load, not a universal step count.
+- Atkinson, R. K., Renkl, A., & Merrill, M. M. (2003). [Transitioning From Studying Examples to Solving Problems: Effects of Self-Explanation Prompts and Fading Worked-Out Steps](https://doi.org/10.1037/0022-0663.95.4.774). Tests self-explanation and progressive fading as learners move from examples to independent performance.
+- Hamari, J. et al. (2017). [Why Do Players Buy In-Game Content? An Empirical Study on Concrete Purchase Motivations](https://doi.org/10.1016/j.chb.2016.11.045). A survey links spending with motivations including unobstructed play, social interaction, and economic rationale. The observational design does not establish that manufactured obstruction is beneficial or ethical.
+- Gray, C. M. et al. (2018). [The Dark (Patterns) Side of UX Design](https://doi.org/10.1145/3173574.3174108). Analyzes practitioner-identified dark patterns and ethical concerns where user value can be displaced by organizational value.
+- Xia, L., Monroe, K. B., & Cox, J. L. (2004). [The Price Is Unfair! A Conceptual Framework of Price Fairness Perceptions](https://doi.org/10.1509/jmkg.68.4.1.42733). Integrates theory and evidence about how buyers form price-fairness judgments and their behavioral consequences.
+- Zendle, D., & Cairns, P. (2018). [Video Game Loot Boxes Are Linked to Problem Gambling: Results of a Large-Scale Survey](https://doi.org/10.1371/journal.pone.0206767). Reports an association between paid loot-box spending and problem-gambling severity. Its cross-sectional design does not establish causal direction or diagnose an individual.
+
 ## 4. Contested and heterogeneous findings
 
 - Mertens, S. et al. (2022). [The Effectiveness of Nudging: A Meta-Analysis of Choice Architecture Interventions Across Behavioral Domains](https://doi.org/10.1073/pnas.2107346118), with its [published correction](https://doi.org/10.1073/pnas.2204059119), reports a positive aggregate effect with considerable heterogeneity and publication bias.
