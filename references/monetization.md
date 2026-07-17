@@ -6,10 +6,11 @@
 2. Monetization truth ledger
 3. Model-neutral audit
 4. Model-specific questions
-5. Revenue-quality metrics
-6. Experiment protocol
-7. Vitia integration
-8. Source boundary
+5. Compound-pressure audit
+6. Revenue-quality metrics
+7. Experiment protocol
+8. Vitia integration
+9. Source boundary
 
 ## 1. Governing objective
 
@@ -119,7 +120,38 @@ high-risk classification and stronger protection.
 - State the reward and duration accurately and make close controls legible.
 - Measure accidental clicks, fatigue, privacy, and the effect on core value.
 
-## 5. Revenue-quality metrics
+## 5. Compound-pressure audit
+
+Map the complete sequence rather than evaluating each screen in isolation:
+
+```text
+trigger -> emotional state -> offer -> comparison frame -> payment
+        -> delivered value -> next ask -> decline or exit
+```
+
+Record whether the sequence combines:
+
+- a free or very cheap entry with progressively larger asks;
+- a deliberately weak comparison option with an “obviously better” paid option;
+- a gift, guild contribution, ranking, or peer display with purchase obligation;
+- loss, near miss, competitive defeat, frustration, fatigue, or time pressure
+  with an immediate paid recovery;
+- accumulated progress or collection investment with scarcity or reset pressure;
+- player-perceived control with a random outcome;
+- variable rewards with unlimited or difficult-to-understand cumulative spend.
+
+One element may have a legitimate use. A stack can remove practical freedom even
+when every click is technically optional. Treat paid randomized rewards, loss
+chasing, near-miss monetization, and social spend pressure as high-risk. Provide
+real-money totals, purchase and probability history, budgets, cooling-off,
+stopping cues, non-random alternatives, and a decline path that does not punish
+the user.
+
+Test comprehension with neutral questions before payment: total cost, delivered
+value, probability or guarantee, recurrence, expiry, and how to stop. A visible
+disclosure that representative users do not understand is not informed choice.
+
+## 6. Revenue-quality metrics
 
 Report revenue with customer and risk outcomes over an appropriate horizon:
 
@@ -136,7 +168,7 @@ Report revenue with customer and risk outcomes over an appropriate horizon:
 A treatment fails when revenue rises by increasing unacceptable regret,
 complaints, harmful overuse, extreme spend concentration, or blocked exit.
 
-## 6. Experiment protocol
+## 7. Experiment protocol
 
 1. Complete the label-neutral truth ledger and safety screen.
 2. Define the customer value that payment is meant to exchange.
@@ -153,7 +185,7 @@ Use conjoint or Best–Worst Scaling to study tradeoffs and proposition priority
 use randomized experiments for causal campaign or flow effects. See
 [research-methods.md](research-methods.md).
 
-## 7. Vitia integration
+## 8. Vitia integration
 
 - **Avaritia:** total value, price comparison, ownership, and fair risk reversal.
 - **Gula:** repeat purchase, depletion, collection, satiation, and overuse risk.
@@ -166,7 +198,7 @@ use randomized experiments for causal campaign or flow effects. See
 These are post-evidence routing tags. Never decide that a transaction is
 “Avaritia” because it involves money or “Gula” because it repeats.
 
-## 8. Source boundary
+## 9. Source boundary
 
 The practitioner framing comes from the Notion lesson
 [#21. お金の話](https://app.notion.com/p/26739cbfbab980cbb2fadca1f0e98cd3),
@@ -175,8 +207,17 @@ how money is taken so participants can avoid exploitation. Vitia converts that
 framing into a protection-first, model-neutral audit rather than instructions to
 exploit cognitive or neurological “bugs.”
 
-The page exposes an attached `UXQ.pptx`, but its binary contents were not
-returned by the available Notion integration. No unobserved quiz question or
-slide claim is represented here. Academic evidence on in-game purchase motives,
-dark patterns, price fairness, and loot-box risk is summarized in
+The locally supplied `UXQ.pptx` was subsequently reviewed in full. Slides 37–57
+frame revenue concentration, post-purchase justification, sunk cost, loss
+framing, and choice complexity; slides 61–126 present free entry, escalating
+asks, reciprocity, social pressure, decoys, accumulated investment, defeat,
+near-miss presentation, routine, scarcity, and perceived control; slides 127–141
+connect repeated rewards with protective self-audit questions and a final call
+for a flat view. Vitia uses these cases to detect compound pressure, not to
+optimize it.
+
+Deck-specific percentages, “optimal” frequencies, company attributions, and
+deterministic dopamine or dependency sequences remain unverified and are not
+cached as facts. Academic evidence on in-game purchase motives, dark patterns,
+price fairness, near misses, and loot-box risk is summarized in
 [evidence.md](evidence.md).

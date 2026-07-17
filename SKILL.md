@@ -34,6 +34,7 @@ Treat the seven Latin domains as a strategy-selection interface, not as a scient
    - Stop persuasive optimization when a blocked condition applies. Offer neutral information, user-protective design, or research instead.
 4. Audit experience and monetization when material.
    - For discoverability, affordances, tutorials, first-stage design, or time to first value, read [references/ux-onboarding.md](references/ux-onboarding.md).
+   - For games or play-like products where the promise depends on rules, challenge, failure, cooperation, competition, spectatorship, or repeat mastery, read [references/game-experience.md](references/game-experience.md) and run `python scripts/audit_game_experience.py <input.json>` when repeatability is useful.
    - For pricing, subscriptions, ads, in-game purchases, randomized rewards, or paywalls, read [references/monetization.md](references/monetization.md).
    - Evaluate the mechanics and outcomes, never the monetization-model name alone.
 5. Score the seven domains.
@@ -68,7 +69,7 @@ Return sections in this order:
 1. **Neutrality check**: bracketed labels and result of the counterfactual rename check.
 2. **Truth ledger**: verified, assumed, unknown.
 3. **Diagnosis**: objective, bottleneck, audience context in plain language.
-4. **Experience and monetization audit**: when material, discoverability, tutorial, value exchange, total cost, agency, and revenue-quality guardrails.
+4. **Experience and monetization audit**: when material, discoverability, tutorial, play promise, challenge and recovery, social fairness, repeat value, value exchange, total cost, agency, and revenue-quality guardrails.
 5. **Domain selection**: scores or qualitative strength, primary, optional secondary, and reasons for excluding close alternatives.
 6. **Supporting mechanism audit**: when material, module, opportunity evidence, readiness gaps, and relationship to the selected domain.
 7. **Strategy card**: mechanism, proposition, proof, message, CTA, channel, and boundary conditions.

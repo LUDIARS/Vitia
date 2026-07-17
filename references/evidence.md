@@ -5,8 +5,9 @@
 1. General decision and identity mechanisms
 2. Domain-specific evidence
 3. Supporting mechanism evidence
-4. Contested and heterogeneous findings
-5. Interpretation rules
+4. Game-experience evidence
+5. Contested and heterogeneous findings
+6. Interpretation rules
 
 Prefer the linked primary articles when making a strong scientific claim. The domain mapping is a Vitia design convention; the papers validate component mechanisms, not the seven-domain system as a whole.
 
@@ -85,14 +86,27 @@ Prefer the linked primary articles when making a strong scientific claim. The do
 - Xia, L., Monroe, K. B., & Cox, J. L. (2004). [The Price Is Unfair! A Conceptual Framework of Price Fairness Perceptions](https://doi.org/10.1509/jmkg.68.4.1.42733). Integrates theory and evidence about how buyers form price-fairness judgments and their behavioral consequences.
 - Zendle, D., & Cairns, P. (2018). [Video Game Loot Boxes Are Linked to Problem Gambling: Results of a Large-Scale Survey](https://doi.org/10.1371/journal.pone.0206767). Reports an association between paid loot-box spending and problem-gambling severity. Its cross-sectional design does not establish causal direction or diagnose an individual.
 
-## 4. Contested and heterogeneous findings
+## 4. Game-experience evidence
+
+- Malone, T. W. (1981). [Toward a Theory of Intrinsically Motivating Instruction](https://doi.org/10.1207/s15516709cog0504_2). Studies motivating computer games and organizes design hypotheses around challenge, fantasy, and curiosity. It does not establish a universal recipe for enjoyment or an optimal difficulty curve.
+- Sweetser, P., & Wyeth, P. (2005). [GameFlow: A Model for Evaluating Player Enjoyment in Games](https://doi.org/10.1145/1077246.1077253). Proposes an evaluation model covering concentration, challenge, skills, control, goals, feedback, immersion, and social interaction. Vitia uses these as audit prompts, not validated psychometric coefficients.
+- Ryan, R. M., Rigby, C. S., & Przybylski, A. (2006). [The Motivational Pull of Video Games: A Self-Determination Theory Approach](https://doi.org/10.1007/s11031-006-9051-8). Four studies relate perceived in-game autonomy and competence to enjoyment, preferences, and some well-being outcomes. The findings do not permit diagnosis from telemetry or justify controlling engagement design.
+- Clark, L., Lawrence, A. J., Astley-Jones, F., & Gray, N. (2009). [Gambling Near-Misses Enhance Motivation to Gamble and Recruit Win-Related Brain Circuitry](https://doi.org/10.1016/j.neuron.2008.12.031). In a simplified slot-machine task, near misses increased desire to continue despite being less pleasant, with effects tied to perceived control in that design. Vitia treats near-miss monetization as a risk boundary, not an optimization target, and does not import a fixed frequency.
+
+Classic game-studies books cited in the supplied teaching decks—Huizinga's
+*Homo Ludens*, Suits's *The Grasshopper*, Salen and Zimmerman's *Rules of Play*,
+and Juul's *Half-Real*—help articulate rules, voluntary obstacles, cultural play,
+and rule–fiction relations. They are conceptual sources rather than causal
+campaign evidence and are therefore not converted into effect sizes.
+
+## 5. Contested and heterogeneous findings
 
 - Mertens, S. et al. (2022). [The Effectiveness of Nudging: A Meta-Analysis of Choice Architecture Interventions Across Behavioral Domains](https://doi.org/10.1073/pnas.2107346118), with its [published correction](https://doi.org/10.1073/pnas.2204059119), reports a positive aggregate effect with considerable heterogeneity and publication bias.
 - Maier, M. et al. (2022). [No Evidence for Nudging After Adjusting for Publication Bias](https://doi.org/10.1073/pnas.2200300119) reanalyzes that literature and disputes a nonzero aggregate effect after bias adjustment.
 
 Do not encode a generic nudge uplift, a universal best color, or a fixed maximum option count. Cache moderators and experimental procedures, then estimate local effects with a control.
 
-## 5. Interpretation rules
+## 6. Interpretation rules
 
 1. Distinguish mechanism evidence from campaign evidence. A mechanism paper does not prove a specific headline or UI treatment works.
 2. Prefer behavioral outcomes over neural proxies for campaign decisions.
