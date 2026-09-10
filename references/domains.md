@@ -12,6 +12,22 @@
 
 Each domain is a lens for a marketing problem, not a label for a person.
 
+## Two-axis judgments in 2.0.0
+
+Read the scoring anchors in [algorithm.md](algorithm.md). Judge each desired emotional benefit for the specified audience separately from the conditions that make it attainable. The same evidence can be relevant to both axes, but each needs its own explanation. The strategy algorithms below support interpretation; they are not formulas for deriving the two scores.
+
+| Domain | Value: what the audience wants | Performance: what supports delivery |
+| --- | --- | --- |
+| Superbia | Pride in mastery, identity, contribution, belonging, or earned distinction. | Useful ways to learn, express, demonstrate, or receive credible recognition; visible results where relevant. |
+| Avaritia | Satisfaction from worthwhile gain, ownership, accumulation, or economic value. | An attainable payoff, meaningful ownership, transparent costs, and defensible benefit evidence. |
+| Luxuria | A desirable sensory or emotional experience and its anticipation. | Convincing presentation, responsive interaction, a truthful demonstration, and consistent access to the promised experience. |
+| Invidia | The attraction of reaching an admired, relevant reference point. | Fair comparisons, a credible route to progress, attainable examples, and legible feedback. |
+| Gula | Satisfaction from meaningful repetition, variety, collection, or continued mastery. | A loop that produces fresh user value, useful feedback, pacing, and appropriate stopping points. |
+| Ira | Relief and satisfaction from restored agency, a fair outcome, repair, or overcoming a concrete obstacle. | Actual choices, understandable fairness, effective correction, a credible remedy, and a usable recovery path. |
+| Acedia | Ease, relief, comfort, and reaching a desired outcome with manageable effort. | Discoverable next actions, low unnecessary burden, accessibility, timely feedback, and reversible choices. |
+
+Observed frustration or friction can identify an unmet need. It must not inflate the Ira or Acedia value score without evidence that the offered relief matters to the audience, and it must not inflate performance before the remedy works or is credibly feasible. Similarly, activity frequency is not proof of Gula value, and nominal reward size is not proof of Avaritia appeal or delivery.
+
 ## 1. Superbia — identity and credible distinction
 
 **Disciplines:** social identity, self-concept, signaling theory, status consumption, brand positioning.

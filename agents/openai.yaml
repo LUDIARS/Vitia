@@ -1,4 +1,4 @@
 interface:
   display_name: "Vitia"
-  short_description: "ラベル中立な七領域分析でUX・収益化戦略を検証"
-  default_prompt: "Use $vitia to run a label-neutral analysis and design an ethical, evidence-aware UX, monetization, or marketing experiment."
+  short_description: "七領域の価値とパフォーマンスを独立評価し、強みと実現の根拠を示す"
+  default_prompt: "Use $vitia to assess all seven domains on independent value and performance axes for the specified audience, preserve unknowns and per-axis evidence, and explain strengths, delivery gaps, and justified next steps."

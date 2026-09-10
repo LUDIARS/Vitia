@@ -1,9 +1,13 @@
 ---
 name: vitia
-description: "Design label-neutral, ethical, evidence-aware marketing, UX, onboarding, pricing, and monetization strategies. Analyze observed product and audience evidence before mapping it to the seven Vitia lenses: Superbia, Avaritia, Luxuria, Invidia, Gula, Ira, and Acedia. Use for positioning, conversion or retention diagnosis, tutorials, first-value UX, in-game purchases, subscriptions, price fairness, sales hypotheses, behavioral mechanisms, and marketing experiments. Never let a product name, category label, moral framing, reputation, or declared deadly-sin domain affect the evidence or score."
+description: "Assess audience-specific emotional value and the performance that can deliver it on two independent axes for each of the seven Vitia domains: Superbia, Avaritia, Luxuria, Invidia, Gula, Ira, and Acedia. Use for product appeal, positioning, UX, onboarding, pricing, monetization, conversion or retention diagnosis, sales hypotheses, and evidence-aware marketing experiments. Keep strengths, delivery gaps, unknown evidence, and safety separate; exclude product names, reputation, moral framing, and declared domain labels from scoring."
+metadata:
+  version: "2.0.0"
 ---
 
-# Vitia
+# Vitia 2.0.0
+
+For each domain, assess **value (価値 / 主材料)** and **performance (パフォーマンス / 裏付け・達成可能な土壌)** independently. Value describes the emotional experience this audience wants; performance describes how credibly the offer can make it attainable or deliver it. A strong attraction in one domain may be enough to interest a particular audience. Do not average it away with other domains or merge the two axes into a total score. High rubric values are not statistical significance or proof of sales.
 
 ## Governing rule — label neutrality (highest priority)
 
@@ -37,18 +41,21 @@ Treat the seven Latin domains as a strategy-selection interface, not as a scient
    - For games or play-like products where the promise depends on rules, challenge, failure, cooperation, competition, spectatorship, or repeat mastery, read [references/game-experience.md](references/game-experience.md) and run `python scripts/audit_game_experience.py <input.json>` when repeatability is useful.
    - For pricing, subscriptions, ads, in-game purchases, randomized rewards, or paywalls, read [references/monetization.md](references/monetization.md).
    - Evaluate the mechanics and outcomes, never the monetization-model name alone.
-5. Score the seven domains.
+5. Assess all seven domains on both axes.
    - Read [references/algorithm.md](references/algorithm.md).
-   - For repeatable scoring, run `python scripts/score_vitia.py <input.json>`.
-   - Treat missing signals as unknown, never as zero, when making a qualitative assessment.
+   - Use [references/domains.md](references/domains.md) to distinguish desired value from evidence of delivery for each domain.
+   - Record audience, context, each axis score or `null`, rationale, evidence basis, source references, and confidence. Distinguish feasible design from an observed delivered result.
+   - For a repeatable profile, author schema-version-2 input and run `python scripts/score_vitia.py <input.json>`. This validates the assessment and interprets pairs; it does not independently calculate emotional appeal from raw facts.
+   - Keep unknowns as `null`. Preserve strong value even when performance is weak; keep risk and confidence separate from both axes.
 6. Route supporting mechanisms when the artifact or bottleneck makes them material.
    - Read [references/mechanisms.md](references/mechanisms.md).
    - For repeatable opportunity and readiness auditing, run `python scripts/audit_marketing_mechanisms.py <input.json>`.
-   - Keep supporting-module scores separate from the seven-domain scores. Resolve readiness gaps before deployment.
-7. Select one primary domain and at most one secondary domain.
-   - Read the selected sections of [references/domains.md](references/domains.md).
-   - Give each selected domain a distinct job. Do not stack synonyms for intensity.
-   - Apply the conflict and caution rules in `references/algorithm.md`.
+   - Keep supporting-module scores separate from the value/performance profile. Use their findings as referenced evidence; do not automatically transfer their scores to either axis.
+7. Interpret strengths and gaps for the actual decision.
+   - High value with high performance is a candidate strength; high value with weak performance is a delivery gap. Strong performance with weak value calls for an audience or proposition review.
+   - Explain the audience and evidence behind each candidate attraction. A high score alone does not establish market advantage or audience size.
+   - Low or unknown domains do not automatically need improvement. Preserve a coherent product when no material issue remains.
+   - For a concrete treatment, give the chosen domains distinct roles and apply the composition cautions in `references/algorithm.md`. Do not impose a primary/secondary limit on the assessment itself.
 8. Generate a strategy card.
    - State the audience insight as a hypothesis.
    - Map a verified feature to a customer outcome and then to the selected mechanism.
@@ -70,7 +77,7 @@ Return sections in this order:
 2. **Truth ledger**: verified, assumed, unknown.
 3. **Diagnosis**: objective, bottleneck, audience context in plain language.
 4. **Experience and monetization audit**: when material, discoverability, tutorial, play promise, challenge and recovery, social fairness, repeat value, value exchange, total cost, agency, and revenue-quality guardrails.
-5. **Domain selection**: scores or qualitative strength, primary, optional secondary, and reasons for excluding close alternatives.
+5. **Value/performance profile**: all seven domains in a table with separate value and performance, audience/context, per-axis evidence and confidence, strengths, delivery gaps, unknowns, and the supported decision. No composite score or automatic primary/secondary selection.
 6. **Supporting mechanism audit**: when material, module, opportunity evidence, readiness gaps, and relationship to the selected domain.
 7. **Strategy card**: mechanism, proposition, proof, message, CTA, channel, and boundary conditions.
 8. **Experiment**: control, treatment, primary metric, guardrail metric, duration or stopping rule, and disconfirming result.
@@ -85,7 +92,7 @@ Prefer plain language in customer-facing copy. Keep the Latin domain names in an
 - **Luxuria**: anticipated experience, sensory vividness, affect, or immediate desire.
 - **Invidia**: social comparison, aspirational peers, reference groups, or competitive contrast.
 - **Gula**: repeat use, reward learning, variety, satiation, or habit loops.
-- **Ira**: blocked goals, unfairness, frustration, reactance, complaint recovery, or challenger positioning.
-- **Acedia**: procrastination, present bias, choice overload, effort, delay, or activation friction.
+- **Ira**: the value of restored agency, a fair resolution, or a credible remedy for a blocked goal; frustration intensity is not delivered value.
+- **Acedia**: the value of ease, relief, and accessible action; existing friction or abandonment is evidence of a possible need, not proof of delivered value.
 
 Read [references/evidence.md](references/evidence.md) when making scientific claims, explaining why a mechanism was chosen, or extending an algorithm. Do not turn correlational or group-level findings into claims about an individual's brain.

@@ -30,7 +30,7 @@ Use these modules to improve how a selected Vitia strategy is expressed, deliver
 - Read [evidence.md](evidence.md) before making a scientific claim.
 - Use [research-methods.md](research-methods.md) for causal or preference
   measurement; research methods are not scored as persuasion mechanisms.
-- Do not let a module score modify the seven-domain score automatically.
+- Do not let a module score modify either axis of the seven-domain value/performance profile automatically. Cite the underlying finding when it supports an axis judgment and explain that judgment separately.
 
 For deterministic routing, run:
 

@@ -1,0 +1,16 @@
+{
+  "name": "vitia-assessment",
+  "description": "Validate and interpret seven-domain profiles with independent value and performance axes, explicit evidence, unknown values, label neutrality, and separate adoption guardrails.",
+  "presetRules": [],
+  "templateRules": [],
+  "membership": [
+    {
+      "pathPattern": "(^|/)scripts/(score_vitia|vitia_contract|vitia_assessment|vitia_guardrails|test_score_vitia)\\.py$"
+    }
+  ],
+  "specRefs": [
+    "spec/feature/value-performance-assessment.md",
+    "references/algorithm.md",
+    "references/domains.md"
+  ]
+}

@@ -144,7 +144,7 @@ python scripts/audit_game_experience.py --list-signals
 ```
 
 The four lens scores are evidence-coverage heuristics. They do not measure fun,
-diagnose a player, predict sales, or alter the seven Vitia domain scores.
+diagnose a player, predict sales, or alter either axis of the seven-domain Vitia value/performance profile. Underlying findings may be cited as delivery evidence, with a separate performance judgment. The audit's input and output contract is unchanged in 2.0.0.
 
 - **Play promise:** informs Luxuria's truthful experience and Superbia's mastery
   claim.

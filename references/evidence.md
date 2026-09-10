@@ -11,6 +11,8 @@
 
 Prefer the linked primary articles when making a strong scientific claim. The domain mapping is a Vitia design convention; the papers validate component mechanisms, not the seven-domain system as a whole.
 
+The 2.0.0 value/performance axes, scoring anchors, and default high threshold are authored review conventions. The references do not establish them as a validated psychological scale, statistical-significance test, or predictor of sales. Keep evidence basis and confidence separate from the scores; a feasible design hypothesis is not an observed audience response. Compare profiles only with an explicit audience, context, and consistent rubric.
+
 ## 1. General decision and identity mechanisms
 
 - Kahneman, D., & Tversky, A. (1979). [Prospect Theory: An Analysis of Decision under Risk](https://doi.org/10.2307/1914185). Reference-dependent value, gains and losses, and probability weighting. Relevant to Avaritia.

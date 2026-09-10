@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "audience": "Adults seeking an expressive, satisfying short-session building game (synthetic example)",
+  "context": "Design feasibility exercise; no player observation or delivered-result claim. Default descriptive high threshold 0.75.",
+  "domains": {
+    "superbia": {
+      "value": {
+        "score": 0.85,
+        "basis": "hypothesis",
+        "rationale": "Expressing an earned personal style is a strong intended attraction.",
+        "evidence_refs": [
+          "references/algorithm.md#synthetic-example"
+        ],
+        "confidence": 0.6
+      },
+      "performance": {
+        "score": 0.35,
+        "basis": "hypothesis",
+        "rationale": "The proposed tools and feedback do not yet offer a convincing route to that expression.",
+        "evidence_refs": [
+          "references/algorithm.md#synthetic-example"
+        ],
+        "confidence": 0.6
+      }
+    },
+    "gula": {
+      "value": {
+        "score": 0.9,
+        "basis": "hypothesis",
+        "rationale": "Meaningful variety across short sessions is a central intended attraction.",
+        "evidence_refs": [
+          "references/algorithm.md#synthetic-example"
+        ],
+        "confidence": 0.6
+      },
+      "performance": {
+        "score": 0.8,
+        "basis": "hypothesis",
+        "rationale": "The documented loop offers a credible design path to that variety, pending validation.",
+        "evidence_refs": [
+          "references/algorithm.md#synthetic-example"
+        ],
+        "confidence": 0.6
+      }
+    },
+    "luxuria": {
+      "value": {
+        "score": 0.8,
+        "basis": "hypothesis",
+        "rationale": "A vivid first-use experience is an intended attraction.",
+        "evidence_refs": [
+          "references/algorithm.md#synthetic-example"
+        ],
+        "confidence": 0.6
+      },
+      "performance": {
+        "score": null,
+        "basis": "unknown",
+        "rationale": "The playable demonstration has not been assessed.",
+        "evidence_refs": [],
+        "confidence": null
+      }
+    }
+  },
+  "risk_flags": [],
+  "neutrality_check": {
+    "status": "passed",
+    "evidence_refs": [
+      "references/algorithm.md#synthetic-example"
+    ]
+  },
+  "label_context": {
+    "artifact_name": "Synthetic building-game concept",
+    "declared_domain": "superbia"
+  }
+}
